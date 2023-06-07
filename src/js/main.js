@@ -75,7 +75,8 @@ fetch('https://mmaximova.dk/wp-json/jwt-auth/v1/token',{
                 currentPage = currentPage < totalPages ? (currentPage+1) : totalPages;
                 showPage();
             });
-        });
+        
+
 
         const splitArray = (data, size) => {
             let result = [];
@@ -142,6 +143,7 @@ fetch('https://mmaximova.dk/wp-json/jwt-auth/v1/token',{
             )
 
             document.getElementById('staff-page-4').innerHTML = staffPage4;
+        });
     })
 })
 
